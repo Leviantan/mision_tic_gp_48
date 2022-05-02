@@ -62,5 +62,3 @@ print(type(var))
 var = 30 + 50
 print(var)
 print(type(var))
-
-print("texto")
