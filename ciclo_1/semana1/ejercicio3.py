@@ -34,6 +34,7 @@ def operacionSumaP():
 
 #operacionSumaP()
 
+'''
 def sumarDosnumeros():
     num1 = float(input("Ingrese el numero 1: "))
     num2 = float(input("Ingrese el numero 2: "))
@@ -41,7 +42,7 @@ def sumarDosnumeros():
 
 # Llamar la función sumarDosnumeros
 #sumarDosnumeros()
-
+'''
 
 def raizCuadrada():
     valor = float(input("Por favor, introduzca un numero a calcular su raiz cuadrada "))
@@ -59,7 +60,7 @@ def raizcubica():
     #return print("La raiz cubica de :", valor,"es",round((valor ** 0.3))) 
     return print("La raiz cubica de :", valor,"es",round(raiz))   
 
-raizcubica()
+#raizcubica()
 
 
 # Creación de funciones con argumentos o parametros
@@ -73,4 +74,75 @@ a = 3
 b = 7
 
 #print(suma(a,b))
+
+
+# Crear la función
+def mi_funcion(nombre, apellido):
+    miNombre = nombre + apellido
+    return miNombre
+
+# print(mi_funcion("Luis ", "Molero"))
+
+# Creamos la función saludar
+def saludar(nombre, mensaje = "Hola"):
+    print(mensaje,nombre)
+
+# llamar la función
+#saludar("Pepe Grillo")
+
+
+# Creamos la función
+def mensaje():
+    print("Ingrese por favor un valor")
+    
+# Creamos la función
+def sumarDosnumeros():
+    mensaje()
+    num1 = float(input())
+    mensaje()
+    num2 = float(input())
+    suma = num1 + num232
+
+    return print("La suma de", num1, "+", num2, "es igual a:",suma)
+
+# llamar la función sumarDosnumeros
+# sumarDosnumeros()
+
+'''
+def primeraFuncion(): # función externa
+    print("\n \"Hola desde la función externa\" \n")
+    def segundaFuncion(): # función interna
+        print("\n \"Hola desde la función interna\" \n")
+
+    segundaFuncion()
+
+primeraFuncion()
+'''
+
+
+'''
+def primerNumero(x):
+    def segundoNumero(y):
+        return x * y
+    return segundoNumero
+
+resultado = primerNumero(2)
+print(type(resultado))
+print(resultado(5))
+'''
+
+def primeraFuncion():
+    x = 2
+    def segundaFuncion(a):
+        x = 6
+        print(a + x)
+        return x
+    # llamo la función
+    x = segundaFuncion(3)
+    print(x)
+
+# llamo la función
+primeraFuncion()
+
+
 
