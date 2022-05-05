@@ -120,17 +120,21 @@ primeraFuncion()
 '''
 
 
-'''
+#creamos la funcion
 def primerNumero(x):
+    #creamos la función
     def segundoNumero(y):
         return x * y
+    
+    #devolviendo una función
     return segundoNumero
 
 resultado = primerNumero(2)
 print(type(resultado))
 print(resultado(5))
-'''
 
+
+'''
 def primeraFuncion():
     x = 2
     def segundaFuncion(a):
@@ -141,8 +145,9 @@ def primeraFuncion():
     x = segundaFuncion(3)
     print(x)
 
+
 # llamo la función
 primeraFuncion()
-
+'''
 
 

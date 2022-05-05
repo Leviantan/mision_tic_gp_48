@@ -19,9 +19,9 @@ def notaPromedio():
     promedio = (nota1 + nota2 + nota3 + nota4)/4
     print(int(promedio))
 
-notaPromedio()
+#notaPromedio()
 
 def promedio(n1,n2,n3,n4):
     return int((n1+n2+n3+n4)/4)
 
-print(promedio(nota1,nota2,nota3,nota4))
+# print(promedio(nota1,nota2,nota3,nota4))
