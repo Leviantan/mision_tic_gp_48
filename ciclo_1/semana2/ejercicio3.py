@@ -34,6 +34,7 @@ if resultadoExamen > 90:
     print("excelente actividad")
 '''
 
+'''
 num = input('Por favor, ingrese un número entero: ')
 num = int(num)
 
@@ -70,6 +71,40 @@ elif num > 999 and num < 10000:
     print('El número tiene 4 dígitos')
 else:
     print('El número tiene mas de 4 digitos')
+'''
+
+num = int(input('Digite el numero entero: '))
+
+'''
+if num > 0:
+    if ((num>= 10) and (num<=99)):
+        print('El número es positivo y tiene 2 dígitos')
+    else:
+        print('El número es positivo y no tiene 2 dígitos')
+if (num >= -999) and (num <= -1000):
+    print('El número es negativo y tiene 3 dígitos')
+else:
+    print('El numero es negativo y no tiene 3 digitos')
+
+print('fin')
+'''
+
+
+if num > 0:
+    if ((num>= 10) and (num<=99)):
+        print('El número es positivo y tiene 2 dígitos')
+    else:
+        print('El número es positivo y no tiene 2 dígitos')
+else:
+    if (num >= -999) and (num <= -1000):
+        print('El número es negativo y tiene 3 dígitos')
+    else:
+        if num == 0:
+            print('Número invalido')
+        else:
+            print('El numero es negativo y no tiene 3 digitos')
+
+print('fin')
 
 
 
