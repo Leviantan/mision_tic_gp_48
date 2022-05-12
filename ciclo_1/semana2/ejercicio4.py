@@ -108,6 +108,8 @@ print(palabra.find('na', 3))
 linea = '          Aquí vamos               '
 print(linea.strip())
 
+# Busca la subString desde la posición cero y devuelve Verdadero o Falso
+
 linea = 'Que Tengas Un Buen Día'
 print(linea.startswith('Que'))
 print(linea.startswith('que'))
@@ -126,5 +128,73 @@ espacio = dato.find(' ',posicion)
 print(espacio)
 host = dato[posicion+1:espacio]
 print(host)
+
+
+# Operador de formato
+
+# %s cadena
+# %d número
+
+nombre = 'Carlos'
+numero = 40
+
+print('%s %d' % (nombre,numero))
+
+saludo = 'Hola'
+print('%s, Carlos' % (saludo))
+
+camellos = 42
+print('He visto %d camellos' % camellos)
+
+# Caracteres especiales
+
+cadena = 'Hola\nmundo'
+print(cadena)
+
+cadena = r'Hola\nmundo'
+print(cadena)
+
+
+# Método count en cadena (String)
+
+cadena = 'un uno, un dos, un tres'
+
+print(cadena.count('un')) # -- hay 4 "un" en la cadena
+print(cadena.count('un',10)) # -- hay 1 "un" en la cadena
+print(cadena.count('un',0,10)) # -- hay 3 "un" en la cadena
+
+# Método replace
+
+print(cadena.replace('un', '111'))
+print(cadena.replace('un', '1111',2))
+
+# format
+
+var1 = 10
+var2 = 20
+
+print('El valor es: {}'.format(12))
+print('El valor es: {}'.format(11.43433))
+
+print('Los valores son: {}, {} y {}'.format(1,2,3))
+print('Los valores son: {2}, {0} y {1}'.format(1,2,3))
+
+print('Los valores son: {num1}, {num2}'.format(num1 = 2,num2 = 3))
+print('Los valores son: {}, {}'.format(var1, var2))
+
+
+# Multiplicar una cadena
+
+saludo = 'Hola' * 3
+saludo2 = 'mundo'
+print(saludo + saludo2)
+
+# Añadir
+
+msg = 'Hola'
+msg += ' '
+msg += 'mundo'
+
+print(msg)
 
 

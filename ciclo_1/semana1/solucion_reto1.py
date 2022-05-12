@@ -9,6 +9,11 @@ def CDT(usuario: str, capital: int, tiempo: int):
         valor_aperder = capital * porcentaje_aperder
         valor_total = capital - valor_aperder
     
-    return f"Para el usuario {usuario} La cantidad de dinero a recibir, según el monto inicial {capital} para un tiempo de {tiempo} meses es: {valor_total}"  
+    rta = "Para el usuario " + str(usuario)
+    rta += " La cantidad de dinero a recibir, según el monto inicial " + str(capital)
+    rta += " para un tiempo de " + str(tiempo)
+    rta += " meses es: " + str(valor_total)
+
+    return rta    
     
-print(CDT("AB1012",1000000,3))
+# print(CDT("AB1012",1000000,3))
