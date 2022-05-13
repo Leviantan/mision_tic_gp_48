@@ -15,5 +15,7 @@ def CDT(usuario: str, capital: int, tiempo: int):
     rta += " meses es: " + str(valor_total)
 
     return rta    
-    
+
+# Recordar que el bot de la plataforma no se debe hacer impresiones (print), 
+# ni llamar la función 
 # print(CDT("AB1012",1000000,3))
