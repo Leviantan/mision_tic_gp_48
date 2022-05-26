@@ -106,7 +106,7 @@ setMutable1 = set([4,3,11,7,5,2,1,4])
 setMutableCopy = setMutable1.copy()
 
 print(setMutableCopy)
-'''
+
 
 conjunto = set([4.0, 'Carro',True,1,3,4,'20'])
 conjuntoCopy = conjunto.copy()
@@ -114,9 +114,11 @@ conjuntoCopy = conjunto.copy()
 print(conjunto)
 print(conjuntoCopy)
 print(conjunto == conjuntoCopy)
+'''
 
 # difference(), devuelve la diferencia que hay entre dos conjunto
 
+'''
 setMutable1 = set([4,3,11,7,5,2,1,4])
 setMutable2 = set([11,5,9,2,4,8])
 
@@ -125,9 +127,11 @@ print(setMutable1)
 print(setMutable2)
 print(setMutable1.difference(setMutable2))
 print(setMutable2.difference(setMutable1))
+'''
 
 # difference_update(), se actuliza el conjunto.
 
+'''
 c1 = {'python','Zope2','ZODB3','pytz'}
 c2 = {'python','Plone','diazo'}
 
@@ -135,4 +139,38 @@ print(c1)
 print(c2)
 c1.difference_update(c2)
 print(c1)
+'''
+
+# pop(), eliminar un elemento aleatorio del conjunto.
+
+'''
+paquetes = {'python','zope','plone','django'}
+print(paquetes)
+print('Valor aleatorio devuelve es : ', paquetes.pop())
+print('Valor aleatorio devuelve es : ', paquetes.pop())
+print('Valor aleatorio devuelve es : ', paquetes.pop())
+print(dir(paquetes))
+'''
+
+# remove(), Buscar y eliminar un elemento del conjunto
+
+'''
+paquetes = {'python','zope','plone','django'}
+print(paquetes)
+paquetes.remove('zope')
+print(paquetes)
+'''
+
+# update(), agregar elemento de un conjunto mutable
+
+'''
+version = set([4.6])
+version_plone = set([2.1,2.5,3.6,4])
+
+print(version)
+print(version_plone)
+
+version.update(version_plone)
+print(version)
+'''
 
