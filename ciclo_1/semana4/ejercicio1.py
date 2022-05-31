@@ -83,7 +83,71 @@ print(lista)
 
 # tupla -> conjunto (tuple - set)
 
+'''
 tupla = ('hola',111,'mundo','hola')
 conjunto = set(tupla)
 conjunto.add(13)
 print(conjunto)
+'''
+
+# Conjunto -> Cadena (set - str)
+
+'''
+conjunto = {'h','o','l','a'}
+cadena = ''.join(conjunto)
+print(cadena)
+'''
+
+# conjunto -> tupla (set - tuple)
+
+'''
+conjunto = {'h','o','l','a'}
+tupla = tuple(conjunto)
+print(tupla)
+'''
+
+# conjunto -> lista (set - list)
+
+'''
+conjunto = {'h','o','l','a'}
+lista = list(conjunto)
+print(lista)
+'''
+
+# Conversión a diccionario.
+# cadena -> diccionario (str - dict)
+
+'''
+cadena = 'grupo_48'
+
+diccionario = dict()
+
+for posicion in range(len(cadena)):
+    diccionario[posicion] = cadena[posicion]
+print(diccionario)
+
+diccionario = dict(zip(range(len(cadena)),cadena))
+print(diccionario)
+'''
+
+# lista -> diccionario (list - dict)
+
+'''
+lista = ['h','o','l','a']
+diccionario = dict(zip(range(len(lista)),lista))
+print(diccionario)
+'''
+
+# tupla -> diccionario (tuple - dict)
+
+'''
+tupla = ('h','o','l','a')
+diccionario = dict(zip(range(len(tupla)), tupla))
+print(diccionario)
+'''
+
+# conjunto -> diccionario (set - dict)
+
+conjunto = {'h','o','l','a'}
+diccionario = dict(zip(range(len(conjunto)),conjunto))
+print(diccionario)
